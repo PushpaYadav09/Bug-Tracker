@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Bug List</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<h1>All Bugs</h1>
+<a href="/add-bug">+ Add Bug</a>
+<table>
+    <tr><th>ID</th><th>Title</th><th>Status</th><th>Severity</th><th>Assignee</th></tr>
+    <tr th:each="bug : ${bugs}">
+        <td th:text="${bug.id}"></td>
+        <td th:text="${bug.title}"></td>
+        <td th:text="${bug.status}"></td>
+        <td th:text="${bug.severity}"></td>
+        <td th:text="${bug.assignee}"></td>
+    </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Bug</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<h1>Add Bug</h1>
+<form action="/submit-bug" method="post">
+    <input type="text" name="title" placeholder="Title"><br>
+    <textarea name="description" placeholder="Description"></textarea><br>
+    <input type="text" name="status" value="OPEN"><br>
+    <select name="severity">
+        <option>LOW</option>
+        <option>MEDIUM</option>
+        <option>HIGH</option>
+    </select><br>
+    <input type="text" name="reporter" placeholder="Reporter"><br>
+    <input type="text" name="assignee" placeholder="Assignee"><br>
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>
